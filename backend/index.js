@@ -29,8 +29,8 @@ app.use(cors({
     },
   }));
 
-const startServer = ()=>{
-    mongoose.connect(uri);
+const startServer = async ()=>{
+    await mongoose.connect(uri);
     console.log("DB Connected");
 }
 startServer();
